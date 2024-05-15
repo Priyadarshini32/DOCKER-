@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  users:
+    build:
+      context: .
+      dockerfile: Dockerfile.users
+    ports:
+      - "5001:5001"
+
+  products:
+    build:
+      context: .
+      dockerfile: Dockerfile.products
+    ports:
+      - "5002:5002"
